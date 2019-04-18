@@ -1,3 +1,6 @@
+
+// BASIC STYLE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
  abbr, acronym, address, big, cite, code, del, dfn,em, img, ins, kbd, q, s, samp, small, strike,
 strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
@@ -47,9 +50,8 @@ table {
 
 html {
   font-size: 62.5%;
-//   background: linear-gradient(to bottom, #533B0C 0%, #CB8C07 88%, #C7D035 100%);
-background-color: #44300a;
-background-image: linear-gradient(180deg, #44300a 4%, #513e0a 24%, #806114 48%, #a58523 85%, #d0ba6a 100%);
+    background-color: @darkHoney;
+    background-image: linear-gradient(180deg, @darkHoney 4%, @deepHoney 24%, @mellowHoney 48%, @goldHoney 85%, @tanHoney 100%);
 }
 
 html, body {
@@ -66,38 +68,41 @@ body {
   }
   
   
-// COLORS /////////////////////////////////////////////////////////////////////////////////////////////////
+// COLORS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @lightHoney: #C7D035;
 @honey: #CB8C07;
 @darkHoney: #44300a;
-@goldenHoney: #513e0a;
-@darkHoney: #806114;
-@darkHoney: #a58523;
-@darkHoney: #d0ba6a;
+@deepHoney: #513e0a;
+@mellowHoney: #806114;
+@goldHoney: #a58523;
+@tanHoney: #d0ba6a;
 @buttonhoney: rgb(116, 83, 17);
+@shadowHoney: rgb(56, 34, 6);
 
 
-
-// LESS IMPORT FILES //////////////////////////////////////////////////////////////////////////////////////
+// LESS IMPORT FILES /////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
 @import 'less/main.less';
 @import 'less/navigation.less';
 @import 'less/button.less';
 @import 'less/images.less';
 
-// PHONE SCALE /////////////////////////////////////////////////////////////////////////////////////////////
+
+// PHONE SCALE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media(max-width:500px) {
     
     body {
         padding: 5%;
       }
-
 }
 
+
+// TABLET SCALE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @media(max-width:800px) {
-    
+     
     body{
     padding: 5%;
     }

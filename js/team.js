@@ -1,3 +1,17 @@
+
+const beeIcon = document.querySelector(".beeIcon");
+
+
+// BEE ICON GROW ON HOVER //////////////////////////////////////////////////////////////////////////////////////////////
+beeIcon.addEventListener("mouseover", function( event ) {   
+    event.target.style.width = "6rem";
+    event.target.style.height = "6.5rem";
+  setTimeout(function() {
+      event.target.style.width = "";
+      event.target.style.height = "";
+      }, 500);
+    }, false);
+
 class Dropdown {
     constructor(element) {
       this.element = element;
